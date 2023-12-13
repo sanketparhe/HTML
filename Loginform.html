@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .div1 {
+        border: 1px solid black;
+        height: 50px;
+        background-color: rgb(44, 43, 57);
+        width: 100%;
+    }
+
+    .form1 {}
+
+
+    .div3 {
+        border: 1px solid;
+        width: 15%;
+    }
+</style>
+
+<body>
+
+
+    <center>
+        <div class="div3">
+            <div class="div1">
+                <h2 style="color: aliceblue;">LOGIN</h2>
+            </div><br>
+            <div class="div2">
+                <form class="form1" action="" name="myforms" onsubmit="return validateForm()" method="post">
+                    <label style="margin-right:45%;" for="">Email</label> <br>
+                    <input type="text" name="email1" id=""><br>
+                    <label style="margin-right: 40%;" for="">Password</label> <br>
+                    <input type="password" name="pass1" id=""><br>
+                    <a href="">forgot Password</a><br><br>
+                    <button
+                        style="background-color: rgb(94, 141, 251); width: 40%;color: aliceblue; width: 70%;">Login</button><br>
+                    <a href="">New to our platform?</a><a href="">Singup</a><br>
+                    <h4>or</h4>
+                    <button><a style="background-color: rgb(94, 141, 251);color: aliceblue;"
+                            href="">Facebook</a></button> <button
+                        style="margin-left: 10%;width: 19%;background-color: red;"><a style="color: aliceblue;"
+                            href="">Google</a></button><br><br>
+
+                    <script>
+                        let e = document.forms['myforms']['email1'].value;
+                        let p = document.forms['myforms']['pass1'].value;
+
+                        if (e == "") {
+                            alert("Email id  must be filled out");
+                            return false;
+                        }
+                        else if (p == "") {
+                            alert("Feel Password");
+                            return false;
+                        }
+
+                    </script>
+
+                </form>
+            </div>
+        </div>
+    </center>
+</body>
+
+</html>
